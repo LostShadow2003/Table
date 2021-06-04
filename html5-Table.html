@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Table </title>
+    <style>
+    body{background-color: #AFEEEE;}
+    h1{
+        font-family: cursive, sans-serif; 
+        text-align: center; 
+        font-size: 300%; 
+        text-shadow: 2px 2px rgba(50,50,230,.5); 
+        text-decoration-line: underline;}
+
+    table{ 
+        background-color:indigo ;
+        color: cyan; 
+        width: 100%; 
+        border-radius: 20px;
+        font-size: 110%; 
+        text-align: center;}
+
+    footer{
+        text-align: right;
+        font-family: fantasy;
+        font-size: 180%;
+        text-shadow: 3px 3px rgba(72,22,140,.5);
+    }
+
+   button{
+        background-color: hotpink;
+        font-family: cursive;
+        border-radius: 30px;
+    } 
+
+    div{
+        float: right;
+        background-color: steelblue;
+        text-align: center;
+        padding: 8px;
+        border-radius: 10px;
+        border: 2px solid black;
+        transition-property: background-color,border,padding;
+        transition-duration: 1s;
+        transition-delay: .5s;
+    }
+
+    div:active {
+        background-color: tomato;
+        border: 5px solid maroon;
+        padding: 7px;
+    }
+
+    footer{
+        width: 10%;
+        background-color:#AFEEEE ;
+        transform: rotate(20deg);
+        text-align: left;
+        position: absolute;
+        right: 5px;
+    }
+
+    #Potatomato{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        text-align: none;
+        width: 30%;
+        padding: 10px;
+        background-color: white;
+        border-radius: 5px;
+        border: 2px solid green;
+        transition-property: background-color;
+        transition-delay: 1s;
+        transition-duration: 1.5s;
+    }
+
+    #Potatomato:hover{
+         background-color: black;
+    }
+
+    #Tomato{
+        color: black;
+        font-weight: bold;
+        font-family: Arial;
+    }
+
+    #Potato{
+        color: white;
+        font-family: "Times New Roman", cursive;
+        font-style: italic;
+        font-variant: small-caps;
+    }
+
+    </style>
+</head>
+
+<body>
+
+<h1> A SMOL TABLE </h1>
+
+<div onmouseover = "this.style.color = 'white'"
+onmouseout = "this.style.color ='black'"> 
+<span title= "Just a little whee, nothing else to see" > WHEEE!!! >u< </span> </div>
+
+<p>
+<table border = "3">
+	<tr>
+		<th> Column 1 </th> <th> Column 2 </th>
+    </tr>
+
+    <tr>
+    	<td rowspan = "3"> Potato </td> <td> Red </td>
+    </tr> 
+    <tr>
+        <td> Purple </td>
+    </tr>
+
+    <tr>
+    	<td> Brown </td>
+    </tr>
+
+    <tr>
+    <td colspan="2">OH I SEE <button>MEEP!</button></td>
+    </tr>
+
+    <tr>
+    	<td> To Merge </td> <td> Or Not to Merge </td>
+    </tr>
+
+    <tr>
+    	<td colspan = "2"> 
+    		<ul>
+    			<li>ROW</li>
+    			<li>+</li>
+    			<li> COLUMN </li>
+    			<li>=</li>
+    			<li>TABLE</li>
+    		</ul>
+    	</td>
+    </tr>
+</table>
+</p>
+
+<div id="Potatomato">
+    <p id="Tomato">
+       Once was a Tomato
+    </p>
+     <p id="Potato">
+       Now A POTATO!
+    </p>
+</div>
+
+<footer> BY ME! </footer>
+
+</body>
+
+</html>
+
+
+
+
+
+
